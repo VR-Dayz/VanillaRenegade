@@ -1,1 +1,297 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vanilla Renegade — DayZ PC Server</title>
+  <meta name="description" content="Vanilla Renegade — DayZ PC server. Vanilla-based with convenient mods. Weekend raiding only. Join Discord for updates." />
+
+  <meta property="og:title" content="Vanilla Renegade — DayZ PC Server" />
+  <meta property="og:description" content="Vanilla-based with convenient mods. Weekend raiding only. Connection info + Discord." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="container header">
+    <a class="brand" href="#top" aria-label="Vanilla Renegade home">Vanilla Renegade</a>
+
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#connect">Connect</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#rules">Rules</a>
+      <a href="#mods">Mods</a>
+      <a class="btn" href="#discord">Discord</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="container hero">
+      <div class="hero-left">
+        <p class="badge">DayZ • PC • Vanilla-based • Lightly modded</p>
+
+        <h1>Vanilla gameplay, improved quality-of-life, and weekend-only raiding.</h1>
+
+        <p class="sub">
+          Vanilla Renegade keeps the core DayZ experience intact while adding a small set of convenience mods
+          for smoother movement, grouping, and base security. Join Discord for announcements, rules updates,
+          and support.
+        </p>
+
+        <div class="cta">
+          <button class="btn" id="copyConnect" type="button">Copy IP:PORT</button>
+          <a class="btn ghost" href="#connect">How to join</a>
+        </div>
+
+        <div class="meta">
+          <span><strong>Max group size:</strong> 6</span>
+          <span>•</span>
+          <span><strong>Raiding:</strong> Weekends only</span>
+          <span>•</span>
+          <span><strong>Restarts:</strong> Every 4 hours</span>
+        </div>
+
+        <div class="connect-box" aria-label="Connection details">
+          <div>
+            <div class="label">IP</div>
+            <div class="value" id="ipValue">37.156.35.85</div>
+          </div>
+          <div>
+            <div class="label">PORT</div>
+            <div class="value" id="portValue">2302</div>
+          </div>
+          <div>
+            <div class="label">SERVER NAME</div>
+            <div class="value">Vanilla Renegade</div>
+          </div>
+        </div>
+
+        <p class="fineprint">
+          Tip: On PC, DZSA Launcher will auto-install required mods.
+        </p>
+      </div>
+
+      <aside class="card hero-card">
+        <h2>Quick actions</h2>
+
+        <div class="list">
+          <a class="link-row" href="#connect">
+            <span>Connect details</span><span class="arrow">→</span>
+          </a>
+          <a class="link-row" href="#rules">
+            <span>Read rules</span><span class="arrow">→</span>
+          </a>
+          <a class="link-row" href="#mods">
+            <span>View mod list</span><span class="arrow">→</span>
+          </a>
+          <a class="link-row" href="#discord">
+            <span>Join Discord</span><span class="arrow">→</span>
+          </a>
+        </div>
+
+        <hr class="sep" />
+
+        <h3>Server intent</h3>
+        <p class="muted">
+          Keep it close to vanilla: minimal changes, clear rules, and consistent administration.
+        </p>
+
+        <div class="pill-row" aria-label="Feature tags">
+          <span class="pill">Vanilla+</span>
+          <span class="pill">QoL Mods</span>
+          <span class="pill">Weekend Raiding</span>
+          <span class="pill">Group Limit 6</span>
+        </div>
+      </aside>
+    </section>
+
+    <!-- CONNECT -->
+    <section id="connect" class="container section">
+      <h2>How to connect</h2>
+
+      <div class="grid two">
+        <article class="card">
+          <h3>Official DayZ Launcher</h3>
+          <ol class="steps">
+            <li>Open DayZ → <strong>Servers</strong>.</li>
+            <li>Search: <strong>Vanilla Renegade</strong>.</li>
+            <li>Favorite the server, then join.</li>
+          </ol>
+        </article>
+
+        <article class="card">
+          <h3>DZSA Launcher (recommended)</h3>
+          <ol class="steps">
+            <li>Open DZSA Launcher.</li>
+            <li>Search the server name, or paste IP:PORT.</li>
+            <li>Let DZSA install required mods automatically, then join.</li>
+          </ol>
+          <div class="code" id="connectString">37.156.35.85:2302</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section id="highlights" class="container section">
+      <h2>What to expect</h2>
+
+      <div class="grid three">
+        <article class="card">
+          <h3>Vanilla first</h3>
+          <p>
+            Core survival remains intact—loot, pacing, and encounters stay close to the base game.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Convenience mods only</h3>
+          <p>
+            Light quality-of-life improvements (movement, grouping, navigation) without turning it into a modpack server.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Weekend-only raiding</h3>
+          <p>
+            Predictable raiding windows so base building is viable for players with limited weekday time.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Group limit: 6</h3>
+          <p>
+            Keeps fights competitive and reduces large-clan steamrolling.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Regular restarts</h3>
+          <p>
+            Scheduled restarts every 4 hours to support stability and reduce desync.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Discord-driven</h3>
+          <p>
+            Announcements, support, rule clarifications, and community feedback in one place.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- RULES -->
+    <section id="rules" class="container section">
+      <h2>Rules</h2>
+      <p class="muted">
+        Keep these aligned with your Discord rules. The point is clarity and consistent enforcement.
+      </p>
+
+      <div class="grid two">
+        <article class="card">
+          <h3>Core conduct</h3>
+          <ul class="bullets">
+            <li>No cheating, exploits, or third-party advantages.</li>
+            <li>No hate speech, harassment, or doxxing.</li>
+            <li>No combat logging.</li>
+            <li>Admins reserve the right to act on clear evidence of rule-breaking.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Groups & raiding</h3>
+          <ul class="bullets">
+            <li>Max group size: <strong>6</strong>.</li>
+            <li>Raiding: <strong>weekends only</strong> (define exact hours in Discord if needed).</li>
+            <li>No glitch raiding or physics abuse.</li>
+            <li>No excessive griefing after a raid (destroying for no gameplay reason).</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="card callout">
+        <p>
+          If you want, I can add a clearly formatted “Raid Window” section once you decide exact times (e.g., Sat–Sun 18:00–23:00 UK).
+        </p>
+      </div>
+    </section>
+
+    <!-- MODS -->
+    <section id="mods" class="container section">
+      <h2>Convenience mods</h2>
+      <p class="muted">
+        Lightly modded for quality-of-life only.
+      </p>
+
+      <div class="grid three">
+        <article class="card">
+          <h3>Base & security</h3>
+          <ul class="bullets">
+            <li>Code Lock</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Movement & stamina</h3>
+          <ul class="bullets">
+            <li>Auto Run</li>
+            <li>Boosted Stamina</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Team & navigation</h3>
+          <ul class="bullets">
+            <li>Party System</li>
+            <li>Map</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- DISCORD -->
+    <section id="discord" class="container section">
+      <h2>Discord</h2>
+      <div class="card discord">
+        <div>
+          <h3>Join Vanilla Renegade</h3>
+          <p class="muted">
+            Announcements, rule updates, support, and community discussion.
+          </p>
+        </div>
+        <a class="btn" href="https://discord.gg/D6JCuHnWTw" target="_blank" rel="noreferrer">Open Discord</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Vanilla Renegade. Not affiliated with Bohemia Interactive.</p>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Copy connect info
+    const ip = document.getElementById("ipValue").textContent.trim();
+    const port = document.getElementById("portValue").textContent.trim();
+    const connect = `${ip}:${port}`;
+    document.getElementById("connectString").textContent = connect;
+
+    document.getElementById("copyConnect").addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(connect);
+        const btn = document.getElementById("copyConnect");
+        const old = btn.textContent;
+        btn.textContent = "Copied!";
+        setTimeout(() => (btn.textContent = old), 1200);
+      } catch (e) {
+        alert("Copy failed. Please copy manually: " + connect);
+      }
+    });
+  </script>
+</body>
+</html>
