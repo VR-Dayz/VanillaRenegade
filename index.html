@@ -1,14 +1,13 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Vanilla Renegade — DayZ PC Server</title>
-  <meta name="description" content="Vanilla Renegade — DayZ PC server. Vanilla-based with convenient mods. Weekend raiding only. Join Discord for updates." />
+  <title>Vanilla Renegade | DayZ PC Server</title>
+  <meta name="description" content="Vanilla Renegade DayZ PC server. 1PP only. Max group size 6. Restarts every 4 hours. Weekend only raiding. Discord and full rules." />
 
-  <meta property="og:title" content="Vanilla Renegade — DayZ PC Server" />
-  <meta property="og:description" content="Vanilla-based with convenient mods. Weekend raiding only. Connection info + Discord." />
+  <meta property="og:title" content="Vanilla Renegade | DayZ PC Server" />
+  <meta property="og:description" content="1PP only. Max group size 6. Restarts every 4 hours. Weekend only raiding. Full rules and Discord." />
   <meta property="og:type" content="website" />
 
   <link rel="stylesheet" href="styles.css" />
@@ -16,14 +15,17 @@
 
 <body>
   <header class="container header">
-    <a class="brand" href="#top" aria-label="Vanilla Renegade home">Vanilla Renegade</a>
+    <a class="brand" href="#top" aria-label="Vanilla Renegade home">
+      <img class="logo" src="logo.jpg" alt="Vanilla Renegade logo" />
+      <span class="brand-text">Vanilla Renegade</span>
+    </a>
 
     <nav class="nav" aria-label="Primary navigation">
       <a href="#connect">Connect</a>
-      <a href="#highlights">Highlights</a>
-      <a href="#rules">Rules</a>
+      <a href="#server">Server</a>
       <a href="#mods">Mods</a>
-      <a class="btn" href="#discord">Discord</a>
+      <a href="#rules">Rules</a>
+      <a class="btn" href="https://discord.gg/D6JCuHnWTw" target="_blank" rel="noreferrer">Discord</a>
     </nav>
   </header>
 
@@ -31,79 +33,68 @@
     <!-- HERO -->
     <section class="container hero">
       <div class="hero-left">
-        <p class="badge">DayZ • PC • Vanilla-based • Lightly modded</p>
+        <p class="badge">DayZ PC • 1PP Only • Vanilla-based • Convenience mods • Weekend only raiding</p>
 
-        <h1>Vanilla gameplay, improved quality of life, and weekend only raiding.</h1>
+        <h1>Vanilla Renegade</h1>
 
         <p class="sub">
-          Vanilla Renegade keeps the core DayZ experience intact while adding a small set of convenience mods
-          for smoother movement, grouping, and base security. Join Discord for announcements, rules updates,
-          and support.
+          Vanilla Renegade |Loot+ | Fewer Mods | Active & Friendly Admins
         </p>
 
         <div class="cta">
           <button class="btn" id="copyConnect" type="button">Copy IP:PORT</button>
-          <a class="btn ghost" href="#connect">How to join</a>
+          <a class="btn ghost" href="#rules">Read rules</a>
         </div>
 
         <div class="meta">
-          <span><strong>Max group size:</strong> 6</span>
+          <span><strong>IP:</strong> <span id="ipValue">37.156.35.85</span></span>
           <span>•</span>
-          <span><strong>Raiding:</strong> Weekends only</span>
+          <span><strong>Port:</strong> <span id="portValue">2302</span></span>
+          <span>•</span>
+          <span><strong>Max group:</strong> 6</span>
           <span>•</span>
           <span><strong>Restarts:</strong> Every 4 hours</span>
         </div>
 
         <div class="connect-box" aria-label="Connection details">
           <div>
-            <div class="label">IP</div>
-            <div class="value" id="ipValue">37.156.35.85</div>
+            <div class="label">Connect</div>
+            <div class="value mono" id="connectString">37.156.35.85:2302</div>
           </div>
           <div>
-            <div class="label">PORT</div>
-            <div class="value" id="portValue">2302</div>
+            <div class="label">Discord</div>
+            <div class="value">
+              <a class="link" href="https://discord.gg/D6JCuHnWTw" target="_blank" rel="noreferrer">discord.gg/D6JCuHnWTw</a>
+            </div>
           </div>
           <div>
-            <div class="label">SERVER NAME</div>
-            <div class="value">Vanilla Renegade</div>
+            <div class="label">Raiding</div>
+            <div class="value">Friday 16:00 CET to Sunday 23:59 CET</div>
           </div>
         </div>
 
         <p class="fineprint">
-          Tip: On PC, DZSA Launcher will auto-install required mods.
+          Recommended: DZSA Launcher on PC. It will install the required mods automatically.
         </p>
       </div>
 
       <aside class="card hero-card">
-        <h2>Quick actions</h2>
+        <h2>Server overview</h2>
 
-        <div class="list">
-          <a class="link-row" href="#connect">
-            <span>Connect details</span><span class="arrow">→</span>
-          </a>
-          <a class="link-row" href="#rules">
-            <span>Read rules</span><span class="arrow">→</span>
-          </a>
-          <a class="link-row" href="#mods">
-            <span>View mod list</span><span class="arrow">→</span>
-          </a>
-          <a class="link-row" href="#discord">
-            <span>Join Discord</span><span class="arrow">→</span>
-          </a>
-        </div>
+        <ul class="bullets">
+          <li>1PP only</li>
+          <li>Max group size 6</li>
+          <li>Restarts every 4 hours</li>
+          <li>Regular events</li>
+          <li>Convenience mods</li>
+          <li>Weekend only raiding</li>
+        </ul>
 
         <hr class="sep" />
 
-        <h3>Server intent</h3>
-        <p class="muted">
-          Keep it close to vanilla: minimal changes, clear rules, and consistent administration.
-        </p>
-
-        <div class="pill-row" aria-label="Feature tags">
-          <span class="pill">Vanilla+</span>
-          <span class="pill">QoL Mods</span>
-          <span class="pill">Weekend Raiding</span>
-          <span class="pill">Group Limit 6</span>
+        <div class="callout">
+          <strong>Raid times</strong>
+          <div class="muted">Friday 16:00 CET to Sunday 23:59 CET</div>
         </div>
       </aside>
     </section>
@@ -116,128 +107,77 @@
         <article class="card">
           <h3>Official DayZ Launcher</h3>
           <ol class="steps">
-            <li>Open DayZ → <strong>Servers</strong>.</li>
-            <li>Search: <strong>Vanilla Renegade</strong>.</li>
-            <li>Favorite the server, then join.</li>
+            <li>Open DayZ and go to Servers.</li>
+            <li>Search: Vanilla Renegade.</li>
+            <li>Join the server.</li>
           </ol>
         </article>
 
         <article class="card">
-          <h3>DZSA Launcher (recommended)</h3>
+          <h3>DZSA Launcher</h3>
           <ol class="steps">
             <li>Open DZSA Launcher.</li>
-            <li>Search the server name, or paste IP:PORT.</li>
-            <li>Let DZSA install required mods automatically, then join.</li>
+            <li>Search the server name or paste IP:PORT.</li>
+            <li>Let DZSA install the mods, then join.</li>
           </ol>
-          <div class="code" id="connectString">37.156.35.85:2302</div>
+          <div class="code mono" id="connectString2">37.156.35.85:2302</div>
         </article>
       </div>
     </section>
 
-    <!-- HIGHLIGHTS -->
-    <section id="highlights" class="container section">
-      <h2>What to expect</h2>
-
-      <div class="grid three">
-        <article class="card">
-          <h3>Vanilla first</h3>
-          <p>
-            Core survival remains intact loot, pacing, and encounters stay close to the base game.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Convenience mods only</h3>
-          <p>
-            Light quality of life improvements (movement, grouping, navigation).
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Weekend-only raiding</h3>
-          <p>
-            Raids are only allowed on weekends:
-Start: Friday 16:00  (CET)
-End: Sunday 23:59  (CET)
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Group limit: 6</h3>
-          <p>
-            Keeps fights competitive and reduces large-clan steamrolling.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Regular restarts</h3>
-          <p>
-            Scheduled restarts every 4 hours to support stability and reduce desync.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Discord-driven</h3>
-          <p>
-            Announcements, support, rule clarifications, and community feedback in one place.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- RULES -->
-    <section id="rules" class="container section">
-      <h2>Rules</h2>
-      <p class="muted">
-        Keep these aligned with your Discord rules. The point is clarity and consistent enforcement.
-      </p>
+    <!-- SERVER INFO -->
+    <section id="server" class="container section">
+      <h2>Server information</h2>
 
       <div class="grid two">
         <article class="card">
-          <h3>Core conduct</h3>
+          <h3>Details</h3>
           <ul class="bullets">
-            <li>No cheating, exploits, or third-party advantages.</li>
-            <li>No hate speech, harassment, or doxxing.</li>
-            <li>No combat logging.</li>
-            <li>Admins reserve the right to act on clear evidence of rule-breaking.</li>
+            <li>Name: Vanilla Renegade |Loot+ | Fewer Mods | Active & Friendly Admins</li>
+            <li>Platform: PC</li>
+            <li>View: 1PP only</li>
+            <li>Max group size: 6</li>
+            <li>Restarts: every 4 hours</li>
+            <li>Events: regular events</li>
+            <li>Raiding: weekends only</li>
           </ul>
         </article>
 
         <article class="card">
-          <h3>Groups & raiding</h3>
-          <ul class="bullets">
-            <li>Max group size: <strong>6</strong>.</li>
-            <li>Raiding: <strong>weekends only</strong> (define exact hours in Discord if needed).</li>
-            <li>No glitch raiding or physics abuse.</li>
-            <li>No excessive griefing after a raid (destroying for no gameplay reason).</li>
-          </ul>
+          <h3>Connection</h3>
+          <div class="kv">
+            <div class="k">IP:PORT</div>
+            <div class="v mono">37.156.35.85:2302</div>
+          </div>
+          <div class="kv">
+            <div class="k">Discord</div>
+            <div class="v">
+              <a class="link" href="https://discord.gg/D6JCuHnWTw" target="_blank" rel="noreferrer">Join Vanilla Renegade Discord</a>
+            </div>
+          </div>
+          <div class="kv">
+            <div class="k">Raid times</div>
+            <div class="v">Friday 16:00 CET to Sunday 23:59 CET</div>
+          </div>
         </article>
-      </div>
-
-      <div class="card callout">
-        <p>
-          If you want, I can add a clearly formatted “Raid Window” section once you decide exact times (e.g., Sat–Sun 18:00–23:00 UK).
-        </p>
       </div>
     </section>
 
     <!-- MODS -->
     <section id="mods" class="container section">
       <h2>Convenience mods</h2>
-      <p class="muted">
-        Lightly modded for quality-of-life only.
-      </p>
+      <p class="muted">Lightly modded for convenience.</p>
 
       <div class="grid three">
         <article class="card">
-          <h3>Base & security</h3>
+          <h3>Base</h3>
           <ul class="bullets">
             <li>Code Lock</li>
           </ul>
         </article>
 
         <article class="card">
-          <h3>Movement & stamina</h3>
+          <h3>Movement</h3>
           <ul class="bullets">
             <li>Auto Run</li>
             <li>Boosted Stamina</li>
@@ -245,7 +185,7 @@ End: Sunday 23:59  (CET)
         </article>
 
         <article class="card">
-          <h3>Team & navigation</h3>
+          <h3>Group and map</h3>
           <ul class="bullets">
             <li>Party System</li>
             <li>Map</li>
@@ -254,46 +194,199 @@ End: Sunday 23:59  (CET)
       </div>
     </section>
 
-    <!-- DISCORD -->
-    <section id="discord" class="container section">
-      <h2>Discord</h2>
-      <div class="card discord">
-        <div>
-          <h3>Join Vanilla Renegade</h3>
-          <p class="muted">
-            Announcements, rule updates, support, and community discussion.
-          </p>
-        </div>
-        <a class="btn" href="https://discord.gg/D6JCuHnWTw" target="_blank" rel="noreferrer">Open Discord</a>
-      </div>
-    </section>
-  </main>
+    <!-- RULES -->
+    <section id="rules" class="container section">
+      <h2>Rules</h2>
+      <p class="muted">
+        These rules apply in game and in Discord where relevant.
+      </p>
 
-  <footer class="container footer">
-    <p>© <span id="year"></span> Vanilla Renegade. Not affiliated with Bohemia Interactive.</p>
-  </footer>
+      <div class="rules">
+        <details open>
+          <summary>1. Discord conduct rules</summary>
+          <div class="rule-block">
+            <p><strong>1.0 No family insults</strong><br>Insulting relatives (mothers, fathers, siblings, etc.) is forbidden. Everyone has family. Keep it respectful.</p>
 
-  <script>
-    // Year
-    document.getElementById("year").textContent = new Date().getFullYear();
+            <p><strong>1.1 No hate speech or politics</strong><br>Do not incite ethnic or racial hatred. Do not discuss political or religious topics. Do not promote Nazism, fascism, or similar ideologies.</p>
 
-    // Copy connect info
-    const ip = document.getElementById("ipValue").textContent.trim();
-    const port = document.getElementById("portValue").textContent.trim();
-    const connect = `${ip}:${port}`;
-    document.getElementById("connectString").textContent = connect;
+            <p><strong>1.2 Respectful language</strong><br>Unreasonable insults toward community members are forbidden. Senseless swearing in Discord channels is not allowed.</p>
 
-    document.getElementById("copyConnect").addEventListener("click", async () => {
-      try {
-        await navigator.clipboard.writeText(connect);
-        const btn = document.getElementById("copyConnect");
-        const old = btn.textContent;
-        btn.textContent = "Copied!";
-        setTimeout(() => (btn.textContent = old), 1200);
-      } catch (e) {
-        alert("Copy failed. Please copy manually: " + connect);
-      }
-    });
-  </script>
-</body>
-</html>
+            <p><strong>1.3 No meta gaming in Discord</strong><br>Do not post in game information. Examples: gunshots at NWAF, car at Zeleno, Tisy active.</p>
+
+            <p><strong>1.4 No base or stash locations</strong><br>Never post base or stash locations. This applies even if the locations belong to you.</p>
+
+            <p><strong>1.5 Meeting up with friends</strong><br>Use Discord DMs or available voice channels. Do not post meet up requests in public text channels.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>2. General rules</summary>
+          <div class="rule-block">
+            <p><strong>2.0 Respect the staff</strong><br>Treat staff with respect at all times.</p>
+
+            <p><strong>2.1 No stream sniping</strong><br>Watching streams to gain in game advantages is forbidden.</p>
+
+            <p><strong>2.2 Group size limit</strong><br>Maximum of 6 players online at the same time. Larger groups may exist, but only 6 can be online simultaneously.</p>
+
+            <p><strong>2.3 No racism or public attacks</strong><br>Racist remarks, hate speech, or public harassment are strictly prohibited.</p>
+
+            <p><strong>2.4 No doxxing or personal information</strong><br>Do not share personal details of other players. Includes Steam, Discord, or other linked account info.</p>
+
+            <p><strong>2.5 No server promotion</strong><br>Promotion or mentioning of other servers or projects is forbidden.</p>
+
+            <p><strong>2.6 No political or religious topics</strong><br>These discussions are not allowed in game or in Discord.</p>
+
+            <p><strong>2.7 No admin impersonation or misinformation</strong><br>Do not pretend to be staff. Do not spread false information about rules or server operation.</p>
+
+            <p><strong>2.8 No cheats or unfair software</strong><br>Cheats, hacks, or scripts are forbidden. Allowed: Nvidia filters, crosshair tools.</p>
+
+            <p><strong>2.9 No exploiting bugs or vulnerabilities</strong><br>Do not exploit game or server vulnerabilities. If you find a bug, report it in the bug report channel.</p>
+
+            <p><strong>2.10 No circumventing group size</strong><br>Any attempt to bypass group size restrictions will result in a ban.</p>
+
+            <p><strong>2.11 No hiding items in textures</strong><br>Exploiting bugs to hide loot in textures is forbidden.</p>
+
+            <p><strong>2.12 Staff authority</strong><br>Staff may ban without warning. Staff are not obliged to provide evidence.</p>
+
+            <p><strong>2.13 Rule changes</strong><br>Rules may be changed at any time at the discretion of Vanilla Renegade, particularly to address grey areas or situations not yet considered.</p>
+
+            <p><strong>2.14 Alt accounts</strong><br>
+              Each player may use only one account. Any alternate accounts discovered will result in a permanent ban of the alt account and a ban of up to one month on the primary account.
+              If more than one player connects from the same IP address, a support ticket must be submitted in advance with an explanation.
+              Both players will be required to log into the server and Discord simultaneously with an administrator and complete verification tasks to confirm each account is controlled by a different individual.
+              Failure to disclose or report alternate accounts will result in a ban.
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>3. Base building rules</summary>
+          <div class="rule-block">
+            <p><strong>3.0 Flag requirement</strong><br>Every base must have a flag placed within 5 days. The flag will protect 50m in all directions of your base.</p>
+
+            <p><strong>3.1 Flag time limit</strong><br>Bases without a flag after 5 days will be opened by admins for public looting.</p>
+
+            <p><strong>3.2 No coastal building</strong><br>Building in coastal areas (see map) is forbidden. Punishment: base will be deleted without warning.</p>
+
+            <p><strong>3.3 Restricted areas</strong><br>No building in police stations, military zones, or medical zones. Bases must be at least 200m away from military zones.</p>
+
+            <p><strong>3.4 Door limit</strong><br>Maximum of 15 locked doors per base. Garage doors max 1. Doors used only as windows with no loot behind do not count toward the limit.</p>
+
+            <p><strong>3.5 Movement space</strong><br>Leave space between walls to allow free movement.</p>
+
+            <p><strong>3.6 No overlapping or clipping structures</strong><br>
+              Walls, frames, and doors must not overlap, clip into, or pass through any existing map structures.
+              All doors must be fully free from and not intersect with any map assets.
+              Admin will remove illegal doors.
+            </p>
+
+            <p><strong>3.7 One base per group</strong><br>Each group may only have 1 base. A garage is allowed if close to the base but limited to 1 locked door.</p>
+
+            <p><strong>3.8 Code locks not to be shared</strong><br>
+              Code locks are not to be shared with other groups.
+              Any member letting themselves into another base other than their own will receive up to a month ban.
+              Sharing codes with other groups will be treated as base sharing and both parties will be punished.
+            </p>
+
+            <p><strong>3.9 Accessible loot</strong><br>All loot must be accessible and raidable through legitimate gameplay mechanics. Loot may not be hidden behind unraidable walls.</p>
+
+            <p><strong>3.10 Watch tower limits</strong><br>Maximum height of two full watch towers.</p>
+
+            <p><strong>3.11 Tents</strong><br>Tents are not to be stacked inside each other.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>4. Event rules</summary>
+          <div class="rule-block">
+            <p><strong>4.0 Respect the admin</strong><br>Follow instructions from the event admin at all times. Disrespect or ignoring commands may result in removal from the event and being sent back to the coast.</p>
+
+            <p><strong>4.1 Behaviour during events</strong><br>
+              Do not trash talk or fight other participants before the event starts.
+              Do not bring personal weapons or gear unless explicitly allowed.
+              Keep chat to a minimum so admins can communicate instructions clearly.
+            </p>
+
+            <p><strong>4.2 Event participation</strong><br>Most events provide teleportation and gear. Stay away from event zones until the event officially begins.</p>
+
+            <p><strong>4.3 Death during events</strong><br>If killed during an event, you will not be teleported back to base. Winners may receive rewards and teleport back to base.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>5. Raid rules</summary>
+          <div class="rule-block">
+            <p><strong>5.0 Raid times</strong><br>Raids are only allowed on weekends. Start Friday 16:00 CET. End Sunday 23:59 CET.</p>
+
+            <p><strong>5.1 Gate only raiding</strong><br>Raids must be done through gates only. Walls, watchtowers, or other structures cannot be destroyed.</p>
+
+            <p><strong>5.2 No base takeovers</strong><br>You may not claim, recode, or move into a raided base. Take what you want and leave.</p>
+
+            <p><strong>5.3 No glitching</strong><br>Entering bases by glitching is forbidden. Entering via windows is allowed. Punishment: ban.</p>
+
+            <p><strong>5.4 Recording recommended</strong><br>Record when you start raiding, from beginning to end. Without video evidence, disputes will favour the base owner.</p>
+
+            <p><strong>5.5 Damage registration issues</strong><br>If explosives or ammo damage does not register, loot will only be restored with video proof.</p>
+
+            <p><strong>5.6 No logging out in raids</strong><br>Do not log out inside an enemy base during or after a raid.</p>
+
+            <p><strong>5.7 No allied raiding</strong><br>Raids must only involve your own group. No allied groups may raid, patrol, or PvP together during a raid.</p>
+
+            <p><strong>5.8 Obscure entry</strong><br>If you use an unusual entry method, you must explain it to staff if asked. Screenshots or videos help clarify.</p>
+
+            <p><strong>5.9 Boosting rules</strong><br>
+              You may boost using 1 placed object at a time (player, tent, vehicle).
+              You may not stack placed objects.
+              Map structures do not count as placed objects.
+            </p>
+
+            <p><strong>5.10 Logging into foreign bases</strong><br>If you log into a foreign base, you must suicide. Do not dismantle back out.</p>
+
+            <p><strong>5.11 No dismantling</strong><br>Dismantling bases is forbidden.</p>
+
+            <p><strong>5.12 No loot destruction</strong><br>Do not ruin, despawn, or burn loot. If you cannot carry it, leave it. No dropping loot on the ground.</p>
+
+            <p><strong>5.13 Raid cooldown 48 hours</strong><br>
+              A raid is valid if attackers gain access to at least one loot room.
+              If attackers enter a loot room but defenders repel the raid and seal the base, the raid is defended and the same group may not raid that base again for 48 hours.
+              If attackers fail to enter any loot room, the attempt is not considered a raid and multiple attempts are permitted.
+              If a base has been fully raided and remains open, returning for additional loot runs is not considered double raiding.
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>6. Vehicle rules</summary>
+          <div class="rule-block">
+            <p><strong>6.0 Vehicle limit</strong><br>
+              Each team may secure a maximum of 2 vehicles.
+              Any extra vehicles must be left outside the base with all parts attached so others can take them.
+              Do not store wheels and components inside your base.
+            </p>
+
+            <p><strong>6.1 No refunds for bugged vehicles</strong><br>Vehicles lost underground due to map exploits or driving errors (for example driving outside of the map) will not be refunded.</p>
+
+            <p><strong>6.2 Vehicles are not protected</strong><br>Vehicles can be looted or destroyed by anyone. It is up to you to secure your vehicle. No compensation will be provided for lost vehicles or items stored inside them.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>7. Chat and community rules</summary>
+          <div class="rule-block">
+            <p><strong>7.0 Language</strong><br>English only in global chat and Discord. Voice channels may use other languages.</p>
+
+            <p><strong>7.1 No staff impersonation</strong><br>Do not pretend to be staff in any form.</p>
+
+            <p><strong>7.2 No meta gaming in chat</strong><br>Do not give away your or others’ in game locations in side chat.</p>
+
+            <p><strong>7.3 No spamming</strong><br>Spamming global chat will result in a mute or kick.</p>
+
+            <p><strong>7.4 Respect staff</strong><br>Disrespectful or inappropriate comments towards staff will lead to punishment.</p>
+
+            <p><strong>7.5 Tagging rules</strong><br>Only tag Discord roles in emergencies (for example all servers down). Do not tag staff for ticket responses.</p>
+
+            <p><strong>7.6 No public cheating accusations</strong><br>Do not accuse players of cheating in public chat or private messages. Submit a ticket instead.</p>
+
+            <p><strong>7.7 Community reputation</strong><br>Staff may remove players if their public profiles contain content that reflects poorly on the community.</p>
+          </div>
+        </detai
